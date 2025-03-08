@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER-B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+
+    <body class="bg-body-tertiary">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="opacity: 0.8;">
+            <div class="container-fluid">
+              <img src="./images/lo.png" alt="Logo" width="60" height="45" class="d-inline-block align-text-top">
+              <a class="navbar-brand" href="#" style="color: #898121;">BIRYANI</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active"  href="./index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./menu.html">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">GALLERY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">CONTACT</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+          </symbol>
+          <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+          </symbol>
+          <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+          </symbol>
+          <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+          </symbol>
+        </svg>
+    
+        <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)" fdprocessedid="pxbegf">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Light
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Dark
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+    
+        
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="./images/lo.png" alt="" width="72" height="57">
+          <h3 class="lead" style="font-size: 30px;">Book your table now.</h3><br>
+             <h2>"Savor the Tradition, Taste the Love"</h2>
+        </div>
+    
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Product name</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Second product</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Third item</h6>
+                  <small class="text-body-secondary">Brief description</small>
+                </div>
+                <span class="text-body-secondary">$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+                <div class="text-success">
+                  <h6 class="my-0">Promo code</h6>
+                  <small>EXAMPLECODE</small>
+                </div>
+                <span class="text-success">−$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$20</strong>
+              </li>
+            </ul>
+    
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code" fdprocessedid="m5u6yg">
+                <button type="submit" class="btn btn-secondary" fdprocessedid="ozz8v">Redeem</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" fdprocessedid="ul2l9i">
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="" fdprocessedid="l6h6i">
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required="" fdprocessedid="8sjpjj">
+                  <div class="invalid-feedback">
+                      Your username is required.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" fdprocessedid="etimod">
+                  <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="" fdprocessedid="7vomxl">
+                  <div class="invalid-feedback">
+                    Please enter your shipping address.
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" fdprocessedid="w2vs2m">
+                </div>
+    
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" required="" fdprocessedid="iaj3xe">
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+    
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" required="" fdprocessedid="50lrhr">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="zip" placeholder="" required="" fdprocessedid="hqpnhz">
+                  <div class="invalid-feedback">
+                    Zip code required.
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address">
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Payment</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required="" fdprocessedid="w5ek2">
+                  <small class="text-body-secondary">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Name on card is required
+                  </div>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required="" fdprocessedid="2tmz2s">
+                  <div class="invalid-feedback">
+                    Credit card number is required
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="" fdprocessedid="fy7w2">
+                  <div class="invalid-feedback">
+                    Expiration date required
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required="" fdprocessedid="h3u8g">
+                  <div class="invalid-feedback">
+                    Security code required
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit" fdprocessedid="nlkeu">Continue to checkout</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    <br>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2024 TAJ BIRYANI</p>
+        </footer>
+      </div>
+      <br>
+    </div>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+        <script src="checkout.js"></script>
+    
+    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><div id="dse-quicksearch" style="position: fixed; z-index: 10000; display: none;">
+        <div id="dse-disabledpopup" style="cursor: pointer;display: block;position: relative;width: fit-content;padding: 8px;line-height: 16px;border: 1px solid #666;border-radius: 6px;background-color: #484644;font-style: normal;font-weight: normal;color:  #fff;font-size: 13px;font-family: Roboto,Arial,Helvetica,sans-serif;box-shadow: 0px 3px 4px 0px rgba(0,0,0,.14);">
+            <span style="
+                float: left;
+                padding: 0px 12px 0px 4px;
+                ">
+                You've turned off quick searches.
+            </span>
+            <span id="dse-undo" style="padding: 0px 4px 0px 8px;">
+                <span style="
+                   width: 15px;
+                   height: 15px;
+                   float: left;
+                   ">
+                    <svg enable-background="new 0 0 16 16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m14.259 2.75c-1.159-1.16-2.688-1.744-4.207-1.743-1.52-.001-3.049.583-4.208 1.743l-2.843 2.827v-2.57c0-.552-.448-1-1-1h-.016c-.552 0-.984.448-.984 1v5c0 .552.432.993.984.993h5.016c.552 0 1-.441 1-.993s-.448-1-1-1h-2.601l2.859-2.843c.774-.773 1.779-1.156 2.793-1.157 1.014.001 2.019.384 2.793 1.157.772.774 1.155 1.778 1.156 2.793-.001 1.014-.384 2.019-1.157 2.793l-4.543 4.543c-.391.391-.391 1.024 0 1.414.391.391 1.024.391 1.414 0l4.543-4.543c1.16-1.159 1.743-2.688 1.742-4.207.002-1.52-.582-3.048-1.741-4.207z" fill="#fff"></path>
+                        <path d="m0 0h16v16h-16z" fill="none"></path>
+                    </svg>
+                </span>
+                Undo
+            </span>
+        </div>
+        <div id="dse-quicksearchdiv" style="display: inline-block;position: relative;height: 32px;border: 1px solid #666;border-radius: 6px;background-color: #484644; font-style: normal;font-weight: normal;color:  #fff;font-size: 13px;font-family: Roboto,Arial,Helvetica,sans-serif;box-shadow: 0px 3px 4px 0px rgba(0,0,0,.14);">
+            <div id="dse-search" style="border-radius: 5px 0px 0px 5px;height:-webkit-fill-available;height:-moz-fit-content;float: left;line-height: 15px;text-align: center;cursor: pointer;box-sizing: border-box;">
+                <span style="
+                   float: left;
+                   padding: 8px 12px 8px 8px;
+                   height: -webkit-fill-available;
+                   ">
+                    Web
+                    search
+                </span>
+            </div>
+            <div style="        border-left: 1px solid #D2D0CE;
+                float: left;
+                margin: 0px;
+                top: 0;
+                height: 32px;
+                "></div>
+            <div style="height:-webkit-fill-available;height:-moz-fit-content;float: left;padding: 8px 12px 8px 12px;line-height: 15px;text-align: center;cursor: pointer;" id="dse-copy">
+                Copy
+            </div>
+            <div style="        border-left: 1px solid #D2D0CE;
+                height: 32px;
+                float: left;
+                margin: 0px;
+                top: 0;
+                "></div>
+            <div id="dse-moreoptions" style="border-radius: 0px 5px 5px 0px;height:-webkit-fill-available;height:-moz-fit-content;width: 16px;float: left;padding: 8PX 8px 0px 8px;text-align: center; cursor: pointer;position: relative;">
+                <span style="width: 16px;">
+                    <svg enable-background="new 0 0 16 16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m1.5 6.5c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm6.5 0c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5zm6.5 0c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5z" fill="#fff"></path>
+                        <path d="m0 0h16v16h-16z" fill="none"></path>
+                    </svg>
+                </span>
+            </div>
+            <div>
+                <span style="width: 160px;border: 1px solid #666;border-radius: 6px;position: absolute;top: 40px;left: 105px;box-shadow: 0px 3px 4px 0px rgba(0,0,0,.14);background-color: #484644;overflow: hidden;" id="dse-popup">
+                    <div style="padding: 8px 12px;line-height: 15px;font-size: 13px;cursor: pointer;text-align: left;" id="dse-lookup">
+                        Define
+                    </div>
+                    <hr style="        border: 0.5px solid #D2D0CE;
+                      margin: 0;
+                      cursor: default;
+                      height: 0px;
+                      background-color: #3b3a39;">
+                    <div style="padding: 8px 12px;line-height: 15px;font-size: 13px;cursor: pointer;text-align: left;" id="dse-disableFeature">
+                        Turn off quick searches
+                    </div>
+                </span>
+            </div>
+        </div>
+    
+    
+    </div>
+</body>
+</html>
